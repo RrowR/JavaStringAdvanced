@@ -19,12 +19,17 @@ public class Demo01Equals {
      *          那个对象调用了这个方法，那么this就代表的是这个对象;    下面是p1调用了equals方法，那么这个this就是p1   p2就是传入的参数obj
      *       this==obj --> p1==p2
      *
-     *
+     *总结：如果没有重写equals方法，那么默认比较的是地址值，如果重写了equals方法，那么比较的就是值(字符串)
      */
         Person p1 = new Person("镜华", 12);
         Person p2 = new Person("美美", 10);
+        System.out.println("p1="+p1);
+        System.out.println("p2="+p2);
+
+        p1=p2;
+
         boolean b = p1.equals(p2);
-        System.out.println(b);
+        System.out.println(b);  //false
 
     }
 }

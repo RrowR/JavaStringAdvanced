@@ -34,13 +34,13 @@ public class Person {
      * 直接打印对象的地址值没有意义，我们需要重写Object类的toString方法
      * 我们想打印对象的属性
      */
-    @Override
+    /*@Override
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
-    }
+    }*/
     /*@Override
     public String toString() {
         return "Person{name="+name+",age="+age+"}";
